@@ -1,0 +1,224 @@
+{
+  "tool": {
+    "id": "gasometria-arterial",
+    "title": "Interpretação da gasometria arterial",
+    "short": "Distúrbio primário e compensação esperada",
+    "desc": "Interprete a gasometria arterial: distúrbio ácido-base primário, compensação esperada (fórmula de Winter e regras respiratórias) e distúrbios mistos.",
+    "lead": "Identifica o distúrbio ácido-base primário a partir do pH, da PaCO₂ e do bicarbonato, calcula a compensação esperada e aponta distúrbios mistos.",
+    "spec": [
+      "medicina-intensiva",
+      "medicina-de-emergencia",
+      "nefrologia",
+      "clinica-medica",
+      "pneumologia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "ph",
+        "pH",
+        "num",
+        {
+          "min": 6.8,
+          "max": 7.8,
+          "step": 0.01,
+          "ph": "7,40"
+        }
+      ],
+      [
+        "paco2",
+        "PaCO₂",
+        "num",
+        {
+          "min": 10,
+          "max": 150,
+          "unit": "mmHg",
+          "ph": "40"
+        }
+      ],
+      [
+        "hco3",
+        "HCO₃⁻",
+        "num",
+        {
+          "min": 3,
+          "max": 60,
+          "step": 0.1,
+          "unit": "mEq/L",
+          "ph": "24"
+        }
+      ]
+    ],
+    "formula": "<p>Acidemia: pH &lt; 7,35; alcalemia: pH &gt; 7,45. O distúrbio primário é o que explica a direção do pH. Compensação esperada:</p><ul><li><strong>Acidose metabólica</strong> (Winter): PaCO₂ = 1,5 × HCO₃⁻ + 8 ± 2.</li><li><strong>Alcalose metabólica:</strong> PaCO₂ = 40 + 0,7 × (HCO₃⁻ − 24) ± 2.</li><li><strong>Acidose respiratória:</strong> HCO₃⁻ sobe 1 mEq/L por 10 mmHg de PaCO₂ (aguda) ou 3,5 mEq/L por 10 mmHg (crônica).</li><li><strong>Alcalose respiratória:</strong> HCO₃⁻ cai 2 mEq/L por 10 mmHg (aguda) ou 4 mEq/L por 10 mmHg (crônica).</li></ul><p>Valor fora da compensação esperada indica um segundo distúrbio. A coerência dos três valores é conferida pela equação de Henderson-Hasselbalch: pH = 6,1 + log[HCO₃⁻ ÷ (0,03 × PaCO₂)].</p>",
+    "table": [
+      [
+        "Distúrbio",
+        "pH",
+        "Alteração primária",
+        "Compensação"
+      ],
+      [
+        "Acidose metabólica",
+        "↓",
+        "HCO₃⁻ ↓",
+        "PaCO₂ ↓"
+      ],
+      [
+        "Alcalose metabólica",
+        "↑",
+        "HCO₃⁻ ↑",
+        "PaCO₂ ↑"
+      ],
+      [
+        "Acidose respiratória",
+        "↓",
+        "PaCO₂ ↑",
+        "HCO₃⁻ ↑"
+      ],
+      [
+        "Alcalose respiratória",
+        "↑",
+        "PaCO₂ ↓",
+        "HCO₃⁻ ↓"
+      ]
+    ],
+    "tips": [
+      "Na acidose metabólica, calcule sempre o ânion gap (corrigido pela albumina) e, se aumentado, a razão delta para procurar um terceiro distúrbio.",
+      "A compensação nunca corrige o pH para o normal: pH normal com PaCO₂ e HCO₃⁻ alterados sugere distúrbio misto (a alcalose respiratória crônica é a exceção que pode normalizar o pH).",
+      "As regras de compensação são aproximadas e levam de horas (respiratória) a 3 a 5 dias (renal) para se estabelecer.",
+      "Se pH, PaCO₂ e HCO₃⁻ não fecham na equação de Henderson-Hasselbalch, suspeite de erro de coleta, digitação ou de amostra venosa.",
+      "Interprete sempre junto com a clínica, os eletrólitos e o lactato: a gasometria sozinha não dá a causa."
+    ],
+    "sources": [
+      [
+        "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014.",
+        "https://doi.org/10.1056/NEJMra1003327"
+      ],
+      [
+        "Albert MS, Dell RB, Winters RW. Quantitative displacement of acid-base equilibrium in metabolic acidosis. Ann Intern Med, 1967.",
+        "https://doi.org/10.7326/0003-4819-66-2-312"
+      ]
+    ],
+    "cases": [
+      [
+        "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        {
+          "ph": 7.4,
+          "paco2": 40,
+          "hco3": 24
+        },
+        {
+          "level": "low",
+          "verdict": "sem distúrbio"
+        }
+      ],
+      [
+        "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        {
+          "ph": 7.29,
+          "paco2": 26,
+          "hco3": 12
+        },
+        {
+          "raw": {
+            "exp": 26,
+            "mixed": 0
+          },
+          "level": "mid",
+          "verdict": "acidose metabólica com compensação respiratória adequada"
+        }
+      ],
+      [
+        "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        {
+          "ph": 7.15,
+          "paco2": 36,
+          "hco3": 12
+        },
+        {
+          "raw": {
+            "exp": 26,
+            "mixed": 1
+          },
+          "level": "high",
+          "verdict": "com acidose respiratória associada"
+        }
+      ],
+      [
+        "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        {
+          "ph": 7.26,
+          "paco2": 60,
+          "hco3": 26
+        },
+        {
+          "raw": {
+            "expAguda": 26,
+            "expCronica": 31
+          },
+          "level": "mid",
+          "verdict": "acidose respiratória aguda"
+        }
+      ],
+      [
+        "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        {
+          "ph": 7.48,
+          "paco2": 47,
+          "hco3": 34
+        },
+        {
+          "raw": {
+            "exp": 47
+          },
+          "level": "mid",
+          "verdict": "alcalose metabólica com compensação"
+        }
+      ],
+      [
+        "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        {
+          "ph": 7.4,
+          "paco2": 60,
+          "hco3": 36
+        },
+        {
+          "level": "mid",
+          "verdict": "pH normal"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 6,
+      "passed": 6,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

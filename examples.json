@@ -1,0 +1,125 @@
+[
+  {
+    "label": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "level": "low",
+      "verdict": "sem distúrbio"
+    },
+    "originalInput": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+    "input": {
+      "ph": 7.29,
+      "paco2": 26,
+      "hco3": 12
+    },
+    "expected": {
+      "raw": {
+        "exp": 26,
+        "mixed": 0
+      },
+      "level": "mid",
+      "verdict": "acidose metabólica com compensação respiratória adequada"
+    },
+    "originalInput": {
+      "ph": 7.29,
+      "paco2": 26,
+      "hco3": 12
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+    "input": {
+      "ph": 7.15,
+      "paco2": 36,
+      "hco3": 12
+    },
+    "expected": {
+      "raw": {
+        "exp": 26,
+        "mixed": 1
+      },
+      "level": "high",
+      "verdict": "com acidose respiratória associada"
+    },
+    "originalInput": {
+      "ph": 7.15,
+      "paco2": 36,
+      "hco3": 12
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+    "input": {
+      "ph": 7.26,
+      "paco2": 60,
+      "hco3": 26
+    },
+    "expected": {
+      "raw": {
+        "expAguda": 26,
+        "expCronica": 31
+      },
+      "level": "mid",
+      "verdict": "acidose respiratória aguda"
+    },
+    "originalInput": {
+      "ph": 7.26,
+      "paco2": 60,
+      "hco3": 26
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+    "input": {
+      "ph": 7.48,
+      "paco2": 47,
+      "hco3": 34
+    },
+    "expected": {
+      "raw": {
+        "exp": 47
+      },
+      "level": "mid",
+      "verdict": "alcalose metabólica com compensação"
+    },
+    "originalInput": {
+      "ph": 7.48,
+      "paco2": 47,
+      "hco3": 34
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+    "input": {
+      "ph": 7.4,
+      "paco2": 60,
+      "hco3": 36
+    },
+    "expected": {
+      "level": "mid",
+      "verdict": "pH normal"
+    },
+    "originalInput": {
+      "ph": 7.4,
+      "paco2": 60,
+      "hco3": 36
+    },
+    "expandedZeroOptions": []
+  }
+]
