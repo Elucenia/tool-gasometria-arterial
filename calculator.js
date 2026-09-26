@@ -1,11 +1,11 @@
-/* tool-gasometria-arterial · Elucenia · https://github.com/Elucenia/tool-gasometria-arterial
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-gasometria-arterial · ELUCENIA · https://github.com/Elucenia/tool-gasometria-arterial
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"gasometria-arterial","title":"Interpretação da gasometria arterial","fields":[["ph","pH","num",{"min":6.8,"max":7.8,"step":0.01,"ph":"7,40"}],["paco2","PaCO₂","num",{"min":10,"max":150,"unit":"mmHg","ph":"40"}],["hco3","HCO₃⁻","num",{"min":3,"max":60,"step":0.1,"unit":"mEq/L","ph":"24"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
