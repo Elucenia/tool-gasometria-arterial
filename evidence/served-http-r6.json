@@ -1,0 +1,1367 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "gasometria-arterial",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/gasometria-arterial/calculator.js",
+    "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4",
+    "bytes": 7501
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 6,
+    "replayed": 6,
+    "passed": 6,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "gasometria-arterial",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+      "originalInput": {
+        "ph": 7.4,
+        "paco2": 40,
+        "hco3": 24
+      },
+      "input": {
+        "ph": 7.4,
+        "paco2": 40,
+        "hco3": 24
+      },
+      "amendments": [],
+      "expected": {
+        "level": "low",
+        "verdict": "sem distúrbio"
+      },
+      "recordedResult": {
+        "main": [
+          "7,40",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "primary": "normal",
+          "phcalc": 7.401029995663981
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ph": 7.4,
+            "paco2": 40,
+            "hco3": 24
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:58.543Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasometria-arterial",
+              "main": [
+                "7,40",
+                "pH"
+              ],
+              "label": "Distúrbio ácido-base",
+              "raw": {
+                "primary": "normal",
+                "phcalc": 7.401029995663981
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "aa26fa29f95d4bc5d3eaef58f449f7386c545bf1d90ac65b0ed680104eb7c5db",
+          "bytes": 184,
+          "elapsedMs": 6.0468999999866355
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:58.543Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasometria-arterial",
+            "main": [
+              "7,40",
+              "pH"
+            ],
+            "label": "Distúrbio ácido-base",
+            "raw": {
+              "primary": "normal",
+              "phcalc": 7.401029995663981
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "aa26fa29f95d4bc5d3eaef58f449f7386c545bf1d90ac65b0ed680104eb7c5db",
+        "bytes": 184,
+        "elapsedMs": 6.0468999999866355
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.primary",
+            "expected": "normal",
+            "obtained": "normal",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.phcalc",
+            "expected": 7.401029995663981,
+            "obtained": 7.401029995663981,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,40",
+            "obtained": "7,40",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pH",
+            "obtained": "pH",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gasometria-arterial",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+      "originalInput": {
+        "ph": 7.29,
+        "paco2": 26,
+        "hco3": 12
+      },
+      "input": {
+        "ph": 7.29,
+        "paco2": 26,
+        "hco3": 12
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "exp": 26,
+          "mixed": 0
+        },
+        "level": "mid",
+        "verdict": "acidose metabólica com compensação respiratória adequada"
+      },
+      "recordedResult": {
+        "main": [
+          "7,29",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "exp": 26,
+          "phcalc": 7.287086643357144,
+          "mixed": 0,
+          "primary": "acidose metabólica"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ph": 7.29,
+            "paco2": 26,
+            "hco3": 12
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:58.856Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasometria-arterial",
+              "main": [
+                "7,29",
+                "pH"
+              ],
+              "label": "Distúrbio ácido-base",
+              "raw": {
+                "exp": 26,
+                "phcalc": 7.287086643357144,
+                "mixed": 0,
+                "primary": "acidose metabólica"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "d12f6f6160249227f14bf4b770d0171c17bf41a2cf7c2ba645e2694eb08dced4",
+          "bytes": 216,
+          "elapsedMs": 3.81150000001071
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:58.856Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasometria-arterial",
+            "main": [
+              "7,29",
+              "pH"
+            ],
+            "label": "Distúrbio ácido-base",
+            "raw": {
+              "exp": 26,
+              "phcalc": 7.287086643357144,
+              "mixed": 0,
+              "primary": "acidose metabólica"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "d12f6f6160249227f14bf4b770d0171c17bf41a2cf7c2ba645e2694eb08dced4",
+        "bytes": 216,
+        "elapsedMs": 3.81150000001071
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.exp",
+            "expected": 26,
+            "obtained": 26,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.mixed",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exp",
+            "expected": 26,
+            "obtained": 26,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.phcalc",
+            "expected": 7.287086643357144,
+            "obtained": 7.287086643357144,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mixed",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.primary",
+            "expected": "acidose metabólica",
+            "obtained": "acidose metabólica",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,29",
+            "obtained": "7,29",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pH",
+            "obtained": "pH",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gasometria-arterial",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+      "originalInput": {
+        "ph": 7.15,
+        "paco2": 36,
+        "hco3": 12
+      },
+      "input": {
+        "ph": 7.15,
+        "paco2": 36,
+        "hco3": 12
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "exp": 26,
+          "mixed": 1
+        },
+        "level": "high",
+        "verdict": "com acidose respiratória associada"
+      },
+      "recordedResult": {
+        "main": [
+          "7,15",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "exp": 26,
+          "phcalc": 7.145757490560674,
+          "mixed": 1,
+          "primary": "acidose metabólica"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ph": 7.15,
+            "paco2": 36,
+            "hco3": 12
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:59.156Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasometria-arterial",
+              "main": [
+                "7,15",
+                "pH"
+              ],
+              "label": "Distúrbio ácido-base",
+              "raw": {
+                "exp": 26,
+                "phcalc": 7.145757490560674,
+                "mixed": 1,
+                "primary": "acidose metabólica"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "7740813f6c1df39feb69e39907faa2820bc3c233f69ac369ee85699b61bf9aa7",
+          "bytes": 216,
+          "elapsedMs": 5.027299999987008
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:59.156Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasometria-arterial",
+            "main": [
+              "7,15",
+              "pH"
+            ],
+            "label": "Distúrbio ácido-base",
+            "raw": {
+              "exp": 26,
+              "phcalc": 7.145757490560674,
+              "mixed": 1,
+              "primary": "acidose metabólica"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "7740813f6c1df39feb69e39907faa2820bc3c233f69ac369ee85699b61bf9aa7",
+        "bytes": 216,
+        "elapsedMs": 5.027299999987008
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.exp",
+            "expected": 26,
+            "obtained": 26,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.mixed",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exp",
+            "expected": 26,
+            "obtained": 26,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.phcalc",
+            "expected": 7.145757490560674,
+            "obtained": 7.145757490560674,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mixed",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.primary",
+            "expected": "acidose metabólica",
+            "obtained": "acidose metabólica",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,15",
+            "obtained": "7,15",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pH",
+            "obtained": "pH",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gasometria-arterial",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+      "originalInput": {
+        "ph": 7.26,
+        "paco2": 60,
+        "hco3": 26
+      },
+      "input": {
+        "ph": 7.26,
+        "paco2": 60,
+        "hco3": 26
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "expAguda": 26,
+          "expCronica": 31
+        },
+        "level": "mid",
+        "verdict": "acidose respiratória aguda"
+      },
+      "recordedResult": {
+        "main": [
+          "7,26",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "expAguda": 26,
+          "expCronica": 31,
+          "phcalc": 7.259700842867511,
+          "mixed": 0,
+          "primary": "acidose respiratória"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ph": 7.26,
+            "paco2": 60,
+            "hco3": 26
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:59.457Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasometria-arterial",
+              "main": [
+                "7,26",
+                "pH"
+              ],
+              "label": "Distúrbio ácido-base",
+              "raw": {
+                "expAguda": 26,
+                "expCronica": 31,
+                "phcalc": 7.259700842867511,
+                "mixed": 0,
+                "primary": "acidose respiratória"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "20a1bdca0854fa36f75ba45a217be8ee170c48a20a973028da914d87d7ea427c",
+          "bytes": 239,
+          "elapsedMs": 5.5010999999940395
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:59.457Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasometria-arterial",
+            "main": [
+              "7,26",
+              "pH"
+            ],
+            "label": "Distúrbio ácido-base",
+            "raw": {
+              "expAguda": 26,
+              "expCronica": 31,
+              "phcalc": 7.259700842867511,
+              "mixed": 0,
+              "primary": "acidose respiratória"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "20a1bdca0854fa36f75ba45a217be8ee170c48a20a973028da914d87d7ea427c",
+        "bytes": 239,
+        "elapsedMs": 5.5010999999940395
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.expAguda",
+            "expected": 26,
+            "obtained": 26,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.expCronica",
+            "expected": 31,
+            "obtained": 31,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.expAguda",
+            "expected": 26,
+            "obtained": 26,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.expCronica",
+            "expected": 31,
+            "obtained": 31,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.phcalc",
+            "expected": 7.259700842867511,
+            "obtained": 7.259700842867511,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mixed",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.primary",
+            "expected": "acidose respiratória",
+            "obtained": "acidose respiratória",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,26",
+            "obtained": "7,26",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pH",
+            "obtained": "pH",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gasometria-arterial",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+      "originalInput": {
+        "ph": 7.48,
+        "paco2": 47,
+        "hco3": 34
+      },
+      "input": {
+        "ph": 7.48,
+        "paco2": 47,
+        "hco3": 34
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "exp": 47
+        },
+        "level": "mid",
+        "verdict": "alcalose metabólica com compensação"
+      },
+      "recordedResult": {
+        "main": [
+          "7,48",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "exp": 47,
+          "phcalc": 7.482259804386874,
+          "mixed": 0,
+          "primary": "alcalose metabólica"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ph": 7.48,
+            "paco2": 47,
+            "hco3": 34
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:59.756Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasometria-arterial",
+              "main": [
+                "7,48",
+                "pH"
+              ],
+              "label": "Distúrbio ácido-base",
+              "raw": {
+                "exp": 47,
+                "phcalc": 7.482259804386874,
+                "mixed": 0,
+                "primary": "alcalose metabólica"
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "f918caec3b50364fb76ab90dc4f1b13f55fc5d4c259dd189de069eaf70ca5305",
+          "bytes": 217,
+          "elapsedMs": 3.765499999979511
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:59.756Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasometria-arterial",
+            "main": [
+              "7,48",
+              "pH"
+            ],
+            "label": "Distúrbio ácido-base",
+            "raw": {
+              "exp": 47,
+              "phcalc": 7.482259804386874,
+              "mixed": 0,
+              "primary": "alcalose metabólica"
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "f918caec3b50364fb76ab90dc4f1b13f55fc5d4c259dd189de069eaf70ca5305",
+        "bytes": 217,
+        "elapsedMs": 3.765499999979511
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.exp",
+            "expected": 47,
+            "obtained": 47,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exp",
+            "expected": 47,
+            "obtained": 47,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.phcalc",
+            "expected": 7.482259804386874,
+            "obtained": 7.482259804386874,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mixed",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.primary",
+            "expected": "alcalose metabólica",
+            "obtained": "alcalose metabólica",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,48",
+            "obtained": "7,48",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pH",
+            "obtained": "pH",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gasometria-arterial",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+      "originalInput": {
+        "ph": 7.4,
+        "paco2": 60,
+        "hco3": 36
+      },
+      "input": {
+        "ph": 7.4,
+        "paco2": 60,
+        "hco3": 36
+      },
+      "amendments": [],
+      "expected": {
+        "level": "mid",
+        "verdict": "pH normal"
+      },
+      "recordedResult": {
+        "main": [
+          "7,40",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "primary": "misto ou compensado",
+          "phcalc": 7.401029995663981
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ph": 7.4,
+            "paco2": 60,
+            "hco3": 36
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+          "startedAt": "2026-10-05T17:39:00.072Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasometria-arterial",
+              "main": [
+                "7,40",
+                "pH"
+              ],
+              "label": "Distúrbio ácido-base",
+              "raw": {
+                "primary": "misto ou compensado",
+                "phcalc": 7.401029995663981
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "f6a9b2459c58dcbc88c6975fba1281787ad41f8ab63ff069e893f66f1f751efa",
+          "bytes": 197,
+          "elapsedMs": 4.565200000011828
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasometria-arterial/calculate",
+        "startedAt": "2026-10-05T17:39:00.072Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasometria-arterial",
+            "main": [
+              "7,40",
+              "pH"
+            ],
+            "label": "Distúrbio ácido-base",
+            "raw": {
+              "primary": "misto ou compensado",
+              "phcalc": 7.401029995663981
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "f6a9b2459c58dcbc88c6975fba1281787ad41f8ab63ff069e893f66f1f751efa",
+        "bytes": 197,
+        "elapsedMs": 4.565200000011828
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.primary",
+            "expected": "misto ou compensado",
+            "obtained": "misto ou compensado",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.phcalc",
+            "expected": 7.401029995663981,
+            "obtained": 7.401029995663981,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,40",
+            "obtained": "7,40",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pH",
+            "obtained": "pH",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
