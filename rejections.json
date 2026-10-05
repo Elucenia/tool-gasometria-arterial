@@ -1,0 +1,425 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ph",
+    "input": {
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ph",
+    "input": {
+      "ph": "",
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ph",
+    "input": {
+      "ph": "NaN",
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ph",
+    "input": {
+      "ph": "Infinity",
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ph",
+    "input": {
+      "ph": "1e309",
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ph",
+    "input": {
+      "ph": "invalid",
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ph",
+    "input": {
+      "ph": {},
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ph",
+    "input": {
+      "ph": true,
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ph",
+    "input": {
+      "ph": 5.8,
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ph",
+    "input": {
+      "ph": 8.8,
+      "paco2": 40,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field paco2",
+    "input": {
+      "ph": 7.4,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": "",
+      "hco3": 24
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": "NaN",
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": "Infinity",
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": "1e309",
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": "invalid",
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": {},
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": true,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": 9,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum paco2",
+    "input": {
+      "ph": 7.4,
+      "paco2": 165,
+      "hco3": 24
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum hco3",
+    "input": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": 66
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "hco3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

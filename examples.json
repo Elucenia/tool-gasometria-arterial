@@ -1,6 +1,14 @@
 [
   {
-    "label": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+    "id": "gasometria-arterial",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+    "originalInput": {
+      "ph": 7.4,
+      "paco2": 40,
+      "hco3": 24
+    },
     "input": {
       "ph": 7.4,
       "paco2": 40,
@@ -10,15 +18,36 @@
       "level": "low",
       "verdict": "sem distúrbio"
     },
-    "originalInput": {
-      "ph": 7.4,
-      "paco2": 40,
-      "hco3": 24
+    "recordedResult": {
+      "main": [
+        "7,40",
+        "pH"
+      ],
+      "label": "Distúrbio ácido-base",
+      "raw": {
+        "primary": "normal",
+        "phcalc": 7.401029995663981
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+    "id": "gasometria-arterial",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+    "originalInput": {
+      "ph": 7.29,
+      "paco2": 26,
+      "hco3": 12
+    },
     "input": {
       "ph": 7.29,
       "paco2": 26,
@@ -32,15 +61,38 @@
       "level": "mid",
       "verdict": "acidose metabólica com compensação respiratória adequada"
     },
-    "originalInput": {
-      "ph": 7.29,
-      "paco2": 26,
-      "hco3": 12
+    "recordedResult": {
+      "main": [
+        "7,29",
+        "pH"
+      ],
+      "label": "Distúrbio ácido-base",
+      "raw": {
+        "exp": 26,
+        "phcalc": 7.287086643357144,
+        "mixed": 0,
+        "primary": "acidose metabólica"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+    "id": "gasometria-arterial",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+    "originalInput": {
+      "ph": 7.15,
+      "paco2": 36,
+      "hco3": 12
+    },
     "input": {
       "ph": 7.15,
       "paco2": 36,
@@ -54,15 +106,38 @@
       "level": "high",
       "verdict": "com acidose respiratória associada"
     },
-    "originalInput": {
-      "ph": 7.15,
-      "paco2": 36,
-      "hco3": 12
+    "recordedResult": {
+      "main": [
+        "7,15",
+        "pH"
+      ],
+      "label": "Distúrbio ácido-base",
+      "raw": {
+        "exp": 26,
+        "phcalc": 7.145757490560674,
+        "mixed": 1,
+        "primary": "acidose metabólica"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+    "id": "gasometria-arterial",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+    "originalInput": {
+      "ph": 7.26,
+      "paco2": 60,
+      "hco3": 26
+    },
     "input": {
       "ph": 7.26,
       "paco2": 60,
@@ -76,15 +151,39 @@
       "level": "mid",
       "verdict": "acidose respiratória aguda"
     },
-    "originalInput": {
-      "ph": 7.26,
-      "paco2": 60,
-      "hco3": 26
+    "recordedResult": {
+      "main": [
+        "7,26",
+        "pH"
+      ],
+      "label": "Distúrbio ácido-base",
+      "raw": {
+        "expAguda": 26,
+        "expCronica": 31,
+        "phcalc": 7.259700842867511,
+        "mixed": 0,
+        "primary": "acidose respiratória"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+    "id": "gasometria-arterial",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+    "originalInput": {
+      "ph": 7.48,
+      "paco2": 47,
+      "hco3": 34
+    },
     "input": {
       "ph": 7.48,
       "paco2": 47,
@@ -97,15 +196,38 @@
       "level": "mid",
       "verdict": "alcalose metabólica com compensação"
     },
-    "originalInput": {
-      "ph": 7.48,
-      "paco2": 47,
-      "hco3": 34
+    "recordedResult": {
+      "main": [
+        "7,48",
+        "pH"
+      ],
+      "label": "Distúrbio ácido-base",
+      "raw": {
+        "exp": 47,
+        "phcalc": 7.482259804386874,
+        "mixed": 0,
+        "primary": "alcalose metabólica"
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+    "id": "gasometria-arterial",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+    "originalInput": {
+      "ph": 7.4,
+      "paco2": 60,
+      "hco3": 36
+    },
     "input": {
       "ph": 7.4,
       "paco2": 60,
@@ -115,11 +237,24 @@
       "level": "mid",
       "verdict": "pH normal"
     },
-    "originalInput": {
-      "ph": 7.4,
-      "paco2": 60,
-      "hco3": 36
+    "recordedResult": {
+      "main": [
+        "7,40",
+        "pH"
+      ],
+      "label": "Distúrbio ácido-base",
+      "raw": {
+        "primary": "misto ou compensado",
+        "phcalc": 7.401029995663981
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

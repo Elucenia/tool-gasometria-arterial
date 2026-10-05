@@ -1,0 +1,88 @@
+{
+  "id": "gasometria-arterial",
+  "repository": "Elucenia/tool-gasometria-arterial",
+  "branch": "main",
+  "commit": "14965ec7a020ddb523019f5129b66e6b3cfd7ac0",
+  "archiveSha256": "3b61452ac8488dced742183b27f3b7a5eb710762bf18197a620eeb1091d0d4d8",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3325,
+      "sha": "fbc6d5bee9718e5f0b35b4c0ab1c3b6278a87925",
+      "sha256": "93743512a73e305f463a7edca0b0f28252259eae4b90b795ad6fbabeb5834caf"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 938,
+      "sha": "f9ba6e1913974ec6188fbee8cb55db84064d8d49",
+      "sha256": "61e1dfd1b2c03605b09f0ad2e1a7da494af7f0862ab7d10ab831ca49404b4a3b"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1470,
+      "sha": "23a33e7938777a9e76b809e8df7d3bab9ae988da",
+      "sha256": "e997255bd23cb38a5e099997b4aff98597df247f03b4d22e7b6d9e46fd4eb09f"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1648,
+      "sha": "2d38bd03f4a4a31c408c66f1d4c7014dbf7c163a",
+      "sha256": "f8aadf4d43eb274bf68aa646d5e28acc12b971b624bc0db8857a8e3ac45e9395"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

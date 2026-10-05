@@ -5,6 +5,7 @@
     "short": "Distúrbio primário e compensação esperada",
     "desc": "Interprete a gasometria arterial: distúrbio ácido-base primário, compensação esperada (fórmula de Winter e regras respiratórias) e distúrbios mistos.",
     "lead": "Identifica o distúrbio ácido-base primário a partir do pH, da PaCO₂ e do bicarbonato, calcula a compensação esperada e aponta distúrbios mistos.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-intensiva",
       "medicina-de-emergencia",
@@ -12,7 +13,6 @@
       "clinica-medica",
       "pneumologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "ph",
@@ -50,45 +50,6 @@
       ]
     ],
     "formula": "<p>Acidemia: pH &lt; 7,35; alcalemia: pH &gt; 7,45. O distúrbio primário é o que explica a direção do pH. Compensação esperada:</p><ul><li><strong>Acidose metabólica</strong> (Winter): PaCO₂ = 1,5 × HCO₃⁻ + 8 ± 2.</li><li><strong>Alcalose metabólica:</strong> PaCO₂ = 40 + 0,7 × (HCO₃⁻ − 24) ± 2.</li><li><strong>Acidose respiratória:</strong> HCO₃⁻ sobe 1 mEq/L por 10 mmHg de PaCO₂ (aguda) ou 3,5 mEq/L por 10 mmHg (crônica).</li><li><strong>Alcalose respiratória:</strong> HCO₃⁻ cai 2 mEq/L por 10 mmHg (aguda) ou 4 mEq/L por 10 mmHg (crônica).</li></ul><p>Valor fora da compensação esperada indica um segundo distúrbio. A coerência dos três valores é conferida pela equação de Henderson-Hasselbalch: pH = 6,1 + log[HCO₃⁻ ÷ (0,03 × PaCO₂)].</p>",
-    "table": [
-      [
-        "Distúrbio",
-        "pH",
-        "Alteração primária",
-        "Compensação"
-      ],
-      [
-        "Acidose metabólica",
-        "↓",
-        "HCO₃⁻ ↓",
-        "PaCO₂ ↓"
-      ],
-      [
-        "Alcalose metabólica",
-        "↑",
-        "HCO₃⁻ ↑",
-        "PaCO₂ ↑"
-      ],
-      [
-        "Acidose respiratória",
-        "↓",
-        "PaCO₂ ↑",
-        "HCO₃⁻ ↑"
-      ],
-      [
-        "Alcalose respiratória",
-        "↑",
-        "PaCO₂ ↓",
-        "HCO₃⁻ ↓"
-      ]
-    ],
-    "tips": [
-      "Na acidose metabólica, calcule sempre o ânion gap (corrigido pela albumina) e, se aumentado, a razão delta para procurar um terceiro distúrbio.",
-      "A compensação nunca corrige o pH para o normal: pH normal com PaCO₂ e HCO₃⁻ alterados sugere distúrbio misto (a alcalose respiratória crônica é a exceção que pode normalizar o pH).",
-      "As regras de compensação são aproximadas e levam de horas (respiratória) a 3 a 5 dias (renal) para se estabelecer.",
-      "Se pH, PaCO₂ e HCO₃⁻ não fecham na equação de Henderson-Hasselbalch, suspeite de erro de coleta, digitação ou de amostra venosa.",
-      "Interprete sempre junto com a clínica, os eletrólitos e o lactato: a gasometria sozinha não dá a causa."
-    ],
     "sources": [
       [
         "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014.",
@@ -97,6 +58,10 @@
       [
         "Albert MS, Dell RB, Winters RW. Quantitative displacement of acid-base equilibrium in metabolic acidosis. Ann Intern Med, 1967.",
         "https://doi.org/10.7326/0003-4819-66-2-312"
+      ],
+      [
+        "Berend2014,NEJM,updated2014-10-16,primary mirror",
+        "https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/443118"
       ]
     ],
     "cases": [
@@ -188,9 +153,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -199,17 +161,391 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:11:12.258Z",
+      "total": 48,
+      "passed": 48,
+      "sourceRowCount": 48,
+      "uniqueApiInputCount": 48,
+      "sourceContextCount": 48,
+      "scope": "48 selected arithmetic HH raw.phcalc values at the expressly local pK6.1. SubmittedpH is neutral in this bank. No primary-disorder/coherence decision, Winter/alkalosis API output or3.5chronic-respiratory variant conformity.",
+      "originalSourceRowCount": 48,
+      "localRejectionContractCount": 0,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "1c178e7a2cee8c15973ad00160f07c12092dcb91f111ef975660ebe2e519c33b",
+        "total": 48,
+        "bankRowCount": 48,
+        "uniqueApiInputCount": 48,
+        "sourceContextCount": 48,
+        "fullStoredSourceRows": 48,
+        "localRejectionContractCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-physiology-independent-expectations-final31-r2.json",
+            "sha256": "bc426fb2ff7230f076e54fd4cb9ed20eb528f60466a7e74aefd8be54da17da89"
+          },
+          {
+            "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+            "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+          },
+          {
+            "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+            "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+          "sha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32"
+        },
+        "packagingRequirement": "Artifact contains all429original source rows across6methods, split424accepted numericcases+5separate local rejection contracts. Preserve source indices, original mathematical expectations and old sample precision expectations."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 48,
+        "uniqueApiInputs": 48,
+        "duplicateRows": 0
+      },
+      "sources": [
+        {
+          "rootPrimaryReview": {
+            "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+            "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+          },
+          "independentPrimaryReview": {
+            "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+            "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+          },
+          "targetedReadings": [
+            {
+              "id": "gasometria-arterial",
+              "url": "https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/443118",
+              "edition": "Berend/deVries/Gans2014, NEJM source supplied through institutional primary-paper mirror",
+              "access": "Actual institutional PDF opened through web reader; local captured pages1/2 personally rendered and viewed, printed1434/1435. This is targeted reading, not a claim to read the full paper.",
+              "readScope": "Henderson-Hasselbalch displayed with pK and bicarbonate/(0.03PaCO2), table compensation formulas read for exclusions. Source chronic respiratory acidosis uses4–5 increment, so it does not establish the local3.5 variant.",
+              "selectedScope": "Only API raw.phcalc HH mathematics with explicitly local pK6.1.",
+              "excluded": [
+                "Primary disorder/clinical incoherence predicate",
+                "Winter or metabolic alkalosis as API output",
+                "Respiratory compensation variants, diagnosis and management"
+              ]
+            }
+          ],
+          "declaredOriginalMethodVersion": "Compensaçãoclássica/Winter 1967, esquema Berend 2014; Henderson Hasselbalch 6,1/0,03; sem método Stewart",
+          "sourceEditionsUnchanged": true,
+          "scope": "48 selected arithmetic HH raw.phcalc values at the expressly local pK6.1. SubmittedpH is neutral in this bank. No primary-disorder/coherence decision, Winter/alkalosis API output or3.5chronic-respiratory variant conformity."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+      "evidenceSha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/root-physiology-independent-peer-publication-final31-r3.json",
+          "sha256": "2117b8908ee7ab1a8787ead1ce59bb3d3a422dbfe57d83501d746e9dcfbccd91"
+        },
+        "status": "passed-scoped-mathematical",
+        "ownNormalDistQuantilesIndependent": true,
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/gasometria-arterial/calculator.js",
+          "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/gasometria-arterial/calculator.js",
+          "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/gasometria-arterial/calculator.js",
+          "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+        }
+      ],
+      "qualifications": [
+        "48 selected arithmetic HH raw.phcalc values at the expressly local pK6.1. SubmittedpH is neutral in this bank. No primary-disorder/coherence decision, Winter/alkalosis API output or3.5chronic-respiratory variant conformity.",
+        "Continuous selected fields preserve the original source31R2 criterion1e-11×max(1,abs expected); integer/string fields use exact equality. Parent original fixtures/tolerances and all862historic source cases remain unchanged.",
+        "Three implementations and original actual Node/VM/Chromium captures are hash bound. Fresh Node/VM and complete-bank helper replays are separate from served portal, UI or new build gates.",
+        "Independent expected values: root initial429 mathematically authored before its imports; only84sample expecteds were revised to independently evaluated six-decimal quantiles with old printed-prose expected retained. Independent peer used NormalDist rather than root numerical-integration series.",
+        "No compensation/clinical diagnosis, exercise prediction/FAI, universally applicable dose,1969reticulocyte hard boundaries,44week clinical threshold, study-design suitability, professional language, rights or full-method approval.",
+        "Source28/29/30 and sample documentary amendment are independent ownership: compose evidence leaves over the latest source and recompute counters rather than replacing old whole catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Compensaçãoclássica/Winter 1967, esquema Berend 2014; Henderson Hasselbalch 6,1/0,03; sem método Stewart",
+    "implementationVersion": "gasometria-arterial@native-2026-10-03+73acdbaba6b8",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/25295502/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Acidemia: pH < 7,35; alcalemia: pH > 7,45. O distúrbio primário é o que explica a direção do pH. Compensação esperada: Acidose metabólica (Winter): PaCO₂ = 1,5 × HCO₃⁻ + 8 ± 2. Alcalose metabólica: PaCO₂ = 40 + 0,7 × (HCO₃⁻ − 24) ± 2. Acidose respiratória: HCO₃⁻ sobe 1 mEq/L por 10 mmHg de PaCO₂ (aguda) ou 3,5 mEq/L por 10 mmHg (crônica). Alcalose respiratória: HCO₃⁻ cai 2 mEq/L por 10 mmHg (aguda) ou 4 mEq/L por 10 mmHg (crônica). Valor fora da compensação esperada indica um segundo distúrbio. A coerência dos três valores é conferida pela equação de Henderson-Hasselbalch: pH = 6,1 + log[HCO₃⁻ ÷ (0,03 × PaCO₂)].",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "ph",
+            "label": "pH",
+            "type": "num",
+            "min": 6.8,
+            "max": 7.8,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "paco2",
+            "label": "PaCO₂",
+            "type": "num",
+            "min": 10,
+            "max": 150,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hco3",
+            "label": "HCO₃⁻",
+            "type": "num",
+            "min": 3,
+            "max": 60,
+            "unit": "mEq/L",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "bf13c8a16d7c0764a88cbf0dfc885da163b338ab5de55cfe8944a13ae4f8e7cc"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014.",
+          "url": "https://doi.org/10.1056/NEJMra1003327",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Physiological approach to assessment of acid-base disturbances.",
+            "year": "2014",
+            "firstPublicationDate": "2014-10-01",
+            "doi": "10.1056/nejmra1003327",
+            "pmid": "25295502",
+            "journal": "The New England journal of medicine",
+            "authors": "Berend K, de Vries AP, Gans RO."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/25295502/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Albert MS, Dell RB, Winters RW. Quantitative displacement of acid-base equilibrium in metabolic acidosis. Ann Intern Med, 1967.",
+          "url": "https://doi.org/10.7326/0003-4819-66-2-312",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Quantitative displacement of acid-base equilibrium in metabolic acidosis.",
+            "year": "1967",
+            "firstPublicationDate": "1967-02-01",
+            "doi": "10.7326/0003-4819-66-2-312",
+            "pmid": "6016545",
+            "journal": "Annals of internal medicine",
+            "authors": "Albert MS, Dell RB, Winters RW."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/6016545/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:11:12.258Z",
+        "total": 48,
+        "passed": 48,
+        "sourceRowCount": 48,
+        "uniqueApiInputCount": 48,
+        "sourceContextCount": 48,
+        "scope": "48 selected arithmetic HH raw.phcalc values at the expressly local pK6.1. SubmittedpH is neutral in this bank. No primary-disorder/coherence decision, Winter/alkalosis API output or3.5chronic-respiratory variant conformity.",
+        "originalSourceRowCount": 48,
+        "localRejectionContractCount": 0,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "1c178e7a2cee8c15973ad00160f07c12092dcb91f111ef975660ebe2e519c33b",
+          "total": 48,
+          "bankRowCount": 48,
+          "uniqueApiInputCount": 48,
+          "sourceContextCount": 48,
+          "fullStoredSourceRows": 48,
+          "localRejectionContractCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-physiology-independent-expectations-final31-r2.json",
+              "sha256": "bc426fb2ff7230f076e54fd4cb9ed20eb528f60466a7e74aefd8be54da17da89"
+            },
+            {
+              "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+              "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+            },
+            {
+              "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+              "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+            "sha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32"
+          },
+          "packagingRequirement": "Artifact contains all429original source rows across6methods, split424accepted numericcases+5separate local rejection contracts. Preserve source indices, original mathematical expectations and old sample precision expectations."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 48,
+          "uniqueApiInputs": 48,
+          "duplicateRows": 0
+        },
+        "sources": [
+          {
+            "rootPrimaryReview": {
+              "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+              "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+            },
+            "independentPrimaryReview": {
+              "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+              "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+            },
+            "targetedReadings": [
+              {
+                "id": "gasometria-arterial",
+                "url": "https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/443118",
+                "edition": "Berend/deVries/Gans2014, NEJM source supplied through institutional primary-paper mirror",
+                "access": "Actual institutional PDF opened through web reader; local captured pages1/2 personally rendered and viewed, printed1434/1435. This is targeted reading, not a claim to read the full paper.",
+                "readScope": "Henderson-Hasselbalch displayed with pK and bicarbonate/(0.03PaCO2), table compensation formulas read for exclusions. Source chronic respiratory acidosis uses4–5 increment, so it does not establish the local3.5 variant.",
+                "selectedScope": "Only API raw.phcalc HH mathematics with explicitly local pK6.1.",
+                "excluded": [
+                  "Primary disorder/clinical incoherence predicate",
+                  "Winter or metabolic alkalosis as API output",
+                  "Respiratory compensation variants, diagnosis and management"
+                ]
+              }
+            ],
+            "declaredOriginalMethodVersion": "Compensaçãoclássica/Winter 1967, esquema Berend 2014; Henderson Hasselbalch 6,1/0,03; sem método Stewart",
+            "sourceEditionsUnchanged": true,
+            "scope": "48 selected arithmetic HH raw.phcalc values at the expressly local pK6.1. SubmittedpH is neutral in this bank. No primary-disorder/coherence decision, Winter/alkalosis API output or3.5chronic-respiratory variant conformity."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+        "evidenceSha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/root-physiology-independent-peer-publication-final31-r3.json",
+            "sha256": "2117b8908ee7ab1a8787ead1ce59bb3d3a422dbfe57d83501d746e9dcfbccd91"
+          },
+          "status": "passed-scoped-mathematical",
+          "ownNormalDistQuantilesIndependent": true,
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/gasometria-arterial/calculator.js",
+            "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/gasometria-arterial/calculator.js",
+            "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/gasometria-arterial/calculator.js",
+            "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+          }
+        ],
+        "qualifications": [
+          "48 selected arithmetic HH raw.phcalc values at the expressly local pK6.1. SubmittedpH is neutral in this bank. No primary-disorder/coherence decision, Winter/alkalosis API output or3.5chronic-respiratory variant conformity.",
+          "Continuous selected fields preserve the original source31R2 criterion1e-11×max(1,abs expected); integer/string fields use exact equality. Parent original fixtures/tolerances and all862historic source cases remain unchanged.",
+          "Three implementations and original actual Node/VM/Chromium captures are hash bound. Fresh Node/VM and complete-bank helper replays are separate from served portal, UI or new build gates.",
+          "Independent expected values: root initial429 mathematically authored before its imports; only84sample expecteds were revised to independently evaluated six-decimal quantiles with old printed-prose expected retained. Independent peer used NormalDist rather than root numerical-integration series.",
+          "No compensation/clinical diagnosis, exercise prediction/FAI, universally applicable dose,1969reticulocyte hard boundaries,44week clinical threshold, study-design suitability, professional language, rights or full-method approval.",
+          "Source28/29/30 and sample documentary amendment are independent ownership: compose evidence leaves over the latest source and recompute counters rather than replacing old whole catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+    },
+    "limits": "A gasometria usa pH, PaCO₂ e bicarbonato para descrever padrões e compensação aproximada; pH aparentemente normal pode coexistir com distúrbio misto. Esta interface não recebe sódio, cloro ou albumina e não calcula ânion gap nem identifica toda causa metabólica. As fórmulas pressupõem contexto fisiológico e tempo para compensação. Há variantes entre fontes: a compensação crônica da acidose respiratória local usa 3,5, enquanto a tabela de Berend 2014 descreve 4–5 por 10 mmHg; a origem dessa variante local deve ser conferida antes de afirmar equivalência integral.",
+    "limitsEvidence": {
+      "status": "direct-primary-physiology-table-and-clinical-context-sections-read",
+      "sources": [
+        {
+          "url": "https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/443118",
+          "edition": "Berend2014,NEJM,updated2014-10-16,primary mirror",
+          "readScope": "Direct original PDF named sections/Table1 pp1434–1437 and Table3/clinical interpretation pp1442–1443 actually read in parsed text; not entire article."
+        },
+        {
+          "url": "https://doi.org/10.7326/0003-4819-66-2-312",
+          "edition": "Winter1967",
+          "readScope": "Original identity only; Winter approximation verified in Berend2014 Table1, not original1967 paper."
+        }
+      ],
+      "populationScope": "Approximate arterial acid/base pattern and expected compensation; not full anion-gap or etiologic analysis.",
+      "remainingChecks": [
+        "Original source of local3.5 chronic respiratory-acidosis coefficient not verified.",
+        "Local normal ranges differ from narrow Berend teaching reference; not all source variants clinically adjudicated.",
+        "OriginalWinter1967 full paper not read.",
+        "No clinical approval or etiologic completeness claim."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/gasometria-arterial/calculator.js",
+    "bytes": 7501,
+    "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "f27498de1096bf602f1ccf7a998dd2c07089cc9590fc1f75f1452da5dcbe0c9d",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "5b5c73aef8751b4b926dffdb9192c1734f93a1e2fb79a84b966f47ee884d9cdf",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "5b5c73aef8751b4b926dffdb9192c1734f93a1e2fb79a84b966f47ee884d9cdf",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
