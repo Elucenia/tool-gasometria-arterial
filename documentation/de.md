@@ -83,3 +83,56 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Arterielle Blutgasanalyse ohne Säure-Basen-Störung
+
+
+### 2
+
+Metabolische Azidose mit angemessener respiratorischer Kompensation
+
+| Ergebnisdetails | |
+| --- | --- |
+| Erwartetes PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2) | 24 bis 28 mmHg |
+| Nächster Schritt | berechnen Sie die Anionenlücke |
+
+
+### 3
+
+Metabolische Azidose mit assoziierter respiratorischer Azidose
+
+| Ergebnisdetails | |
+| --- | --- |
+| Erwartetes PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2) | 24 bis 28 mmHg |
+| Nächster Schritt | berechnen Sie die Anionenlücke |
+
+
+### 4
+
+Akute respiratorische Azidose
+
+| Ergebnisdetails | |
+| --- | --- |
+| Erwartetes HCO₃⁻ bei akutem Verlauf (+1 pro 10 mmHg) | 26 mEq/L |
+| Erwartetes HCO₃⁻ bei chronischem Verlauf (+3,5 pro 10 mmHg) | 31 mEq/L |
+
+
+### 5
+
+Metabolische Alkalose mit angemessener respiratorischer Kompensation
+
+| Ergebnisdetails | |
+| --- | --- |
+| Erwartetes PaCO₂ (40 + 0,7 × ΔHCO₃⁻ ± 2) | 45 bis 49 mmHg |
+
+
+### 6
+
+Normaler pH mit respiratorischer Azidose mit metabolischer Alkalose (oder kompensierter chronischer respiratorischer Azidose): gemischte oder kompensierte Störung
+

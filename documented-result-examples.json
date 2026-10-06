@@ -1,0 +1,1859 @@
+{
+  "id": "gasometria-arterial",
+  "implementationVersion": "gasometria-arterial@native-2026-10-05+0a4a4df6ebe1",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Gasometria sem distúrbio ácido-base",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ esperada (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "24 a 28 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Próximo passo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "calcule o ânion gap",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidose metabólica com compensação respiratória adequada",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ esperada (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "24 a 28 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Próximo passo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "calcule o ânion gap",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidose metabólica com acidose respiratória associada",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HCO₃⁻ esperado se aguda (+1 por 10 mmHg)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HCO₃⁻ esperado se crônica (+3,5 por 10 mmHg)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidose respiratória aguda",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ esperada (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "45 a 49 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alcalose metabólica com compensação respiratória adequada",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "pH normal com acidose respiratória com alcalose metabólica (ou acidose respiratória crônica compensada): distúrbio misto ou compensado",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Arterial blood gas without acid-base disorder",
+            "locale": "en",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Expected PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "en",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 to 28 mmHg",
+                "locale": "en",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Next step",
+                "locale": "en",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "calculate the anion gap",
+                "locale": "en",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Metabolic acidosis with adequate respiratory compensation",
+            "locale": "en",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Expected PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "en",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 to 28 mmHg",
+                "locale": "en",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Next step",
+                "locale": "en",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "calculate the anion gap",
+                "locale": "en",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Metabolic acidosis with associated respiratory acidosis",
+            "locale": "en",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Expected HCO₃⁻ if acute (+1 per 10 mmHg)",
+                "locale": "en",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "en",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expected HCO₃⁻ if chronic (+3,5 per 10 mmHg)",
+                "locale": "en",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "en",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acute respiratory acidosis",
+            "locale": "en",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Expected PaCO₂ (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+                "locale": "en",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "45 to 49 mmHg",
+                "locale": "en",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Metabolic alkalosis with adequate respiratory compensation",
+            "locale": "en",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Normal pH with respiratory acidosis with metabolic alkalosis (or compensated chronic respiratory acidosis): mixed or compensated disorder",
+            "locale": "en",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Gasometría arterial sin trastorno ácido-base",
+            "locale": "es",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ esperada (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "es",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 a 28 mmHg",
+                "locale": "es",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Siguiente paso",
+                "locale": "es",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "calcule el anion gap",
+                "locale": "es",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidosis metabólica con compensación respiratoria adecuada",
+            "locale": "es",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ esperada (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "es",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 a 28 mmHg",
+                "locale": "es",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Siguiente paso",
+                "locale": "es",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "calcule el anion gap",
+                "locale": "es",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidosis metabólica con acidosis respiratoria asociada",
+            "locale": "es",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HCO₃⁻ esperado si aguda (+1 por 10 mmHg)",
+                "locale": "es",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "es",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HCO₃⁻ esperado si crónica (+3,5 por 10 mmHg)",
+                "locale": "es",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "es",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidosis respiratoria aguda",
+            "locale": "es",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ esperada (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+                "locale": "es",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "45 a 49 mmHg",
+                "locale": "es",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alcalosis metabólica con compensación respiratoria adecuada",
+            "locale": "es",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "pH normal con acidosis respiratoria con alcalosis metabólica (o acidosis respiratoria crónica compensada): trastorno mixto o compensado",
+            "locale": "es",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Gaz du sang artériel sans trouble acido-basique",
+            "locale": "fr",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ attendue (Winter : 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "fr",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 à 28 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Étape suivante",
+                "locale": "fr",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "calculez le trou anionique",
+                "locale": "fr",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidose métabolique avec compensation respiratoire adéquate",
+            "locale": "fr",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ attendue (Winter : 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "fr",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 à 28 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Étape suivante",
+                "locale": "fr",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "calculez le trou anionique",
+                "locale": "fr",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidose métabolique avec acidose respiratoire associée",
+            "locale": "fr",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HCO₃⁻ attendu si aiguë (+1 par 10 mmHg)",
+                "locale": "fr",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "fr",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HCO₃⁻ attendu si chronique (+3,5 par 10 mmHg)",
+                "locale": "fr",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "fr",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidose respiratoire aiguë",
+            "locale": "fr",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ attendue (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+                "locale": "fr",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "45 à 49 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alcalose métabolique avec compensation respiratoire adéquate",
+            "locale": "fr",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "pH normal avec acidose respiratoire avec alcalose métabolique (ou acidose respiratoire chronique compensée) : trouble mixte ou compensé",
+            "locale": "fr",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Arterielle Blutgasanalyse ohne Säure-Basen-Störung",
+            "locale": "de",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Erwartetes PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "de",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 bis 28 mmHg",
+                "locale": "de",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nächster Schritt",
+                "locale": "de",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "berechnen Sie die Anionenlücke",
+                "locale": "de",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Metabolische Azidose mit angemessener respiratorischer Kompensation",
+            "locale": "de",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Erwartetes PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "de",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 bis 28 mmHg",
+                "locale": "de",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Nächster Schritt",
+                "locale": "de",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "berechnen Sie die Anionenlücke",
+                "locale": "de",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Metabolische Azidose mit assoziierter respiratorischer Azidose",
+            "locale": "de",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Erwartetes HCO₃⁻ bei akutem Verlauf (+1 pro 10 mmHg)",
+                "locale": "de",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "de",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Erwartetes HCO₃⁻ bei chronischem Verlauf (+3,5 pro 10 mmHg)",
+                "locale": "de",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "de",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Akute respiratorische Azidose",
+            "locale": "de",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Erwartetes PaCO₂ (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+                "locale": "de",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "45 bis 49 mmHg",
+                "locale": "de",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Metabolische Alkalose mit angemessener respiratorischer Kompensation",
+            "locale": "de",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Normaler pH mit respiratorischer Azidose mit metabolischer Alkalose (oder kompensierter chronischer respiratorischer Azidose): gemischte oder kompensierte Störung",
+            "locale": "de",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Emogasanalisi arteriosa senza disturbo acido-base",
+            "locale": "it",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ attesa (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "it",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 a 28 mmHg",
+                "locale": "it",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Passo successivo",
+                "locale": "it",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "calcoli il gap anionico",
+                "locale": "it",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidosi metabolica con compensazione respiratoria adeguata",
+            "locale": "it",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ attesa (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "it",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 a 28 mmHg",
+                "locale": "it",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Passo successivo",
+                "locale": "it",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "calcoli il gap anionico",
+                "locale": "it",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidosi metabolica con acidosi respiratoria associata",
+            "locale": "it",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HCO₃⁻ atteso se acuta (+1 per 10 mmHg)",
+                "locale": "it",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "it",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HCO₃⁻ atteso se cronica (+3,5 per 10 mmHg)",
+                "locale": "it",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "it",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acidosi respiratoria acuta",
+            "locale": "it",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ attesa (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+                "locale": "it",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "45 a 49 mmHg",
+                "locale": "it",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alcalosi metabolica con compensazione respiratoria adeguata",
+            "locale": "it",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "pH normale con acidosi respiratoria con alcalosi metabolica (o acidosi respiratoria cronica compensata): disturbo misto o compensato",
+            "locale": "it",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "غازات الدم الشرياني دون اضطراب حمضي-قاعدي",
+            "locale": "ar",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ المتوقعة (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "ar",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "٢٤ إلى ٢٨ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الخطوة التالية",
+                "locale": "ar",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "احسب الفجوة الأيونية",
+                "locale": "ar",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حماض استقلابي مع تعويض تنفسي مناسب",
+            "locale": "ar",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ المتوقعة (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "ar",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "٢٤ إلى ٢٨ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الخطوة التالية",
+                "locale": "ar",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "احسب الفجوة الأيونية",
+                "locale": "ar",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حماض استقلابي مع حماض تنفسي مرافق",
+            "locale": "ar",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HCO₃⁻ المتوقع إذا كان حادًا (+1 لكل 10 mmHg)",
+                "locale": "ar",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "٢٦ mEq/L",
+                "locale": "ar",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HCO₃⁻ المتوقع إذا كان مزمنًا (+3,5 لكل 10 mmHg)",
+                "locale": "ar",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "٣١ mEq/L",
+                "locale": "ar",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حماض تنفسي حاد",
+            "locale": "ar",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PaCO₂ المتوقعة (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+                "locale": "ar",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "٤٥ إلى ٤٩ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "قلاء استقلابي مع تعويض تنفسي مناسب",
+            "locale": "ar",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "pH طبيعي مع حماض تنفسي مع قلاء استقلابي (أو حماض تنفسي مزمن معوض): اضطراب مختلط أو معوض",
+            "locale": "ar",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "无酸碱失衡的动脉血气",
+            "locale": "zh",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "预计 PaCO₂（Winter：1,5 × HCO₃⁻ + 8 ± 2）",
+                "locale": "zh",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 至 28 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "下一步",
+                "locale": "zh",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "计算阴离子间隙",
+                "locale": "zh",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "代谢性酸中毒伴适当的呼吸性代偿",
+            "locale": "zh",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "预计 PaCO₂（Winter：1,5 × HCO₃⁻ + 8 ± 2）",
+                "locale": "zh",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 至 28 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "下一步",
+                "locale": "zh",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "计算阴离子间隙",
+                "locale": "zh",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "代谢性酸中毒伴相关的呼吸性酸中毒",
+            "locale": "zh",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "若为急性，预计 HCO₃⁻（每 10 mmHg +1）",
+                "locale": "zh",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "zh",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "若为慢性，预计 HCO₃⁻（每 10 mmHg +3,5）",
+                "locale": "zh",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "zh",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "急性呼吸性酸中毒",
+            "locale": "zh",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "预计 PaCO₂（40 + 0,7 × ΔHCO₃⁻ ± 2）",
+                "locale": "zh",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "45 至 49 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "代谢性碱中毒伴适当的呼吸性代偿",
+            "locale": "zh",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "pH 正常伴呼吸性酸中毒和代谢性碱中毒（或代偿性慢性呼吸性酸中毒）：混合性或代偿性紊乱",
+            "locale": "zh",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "酸塩基障害のない動脈血ガス",
+            "locale": "ja",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "予測PaCO₂（Winter: 1,5 × HCO₃⁻ + 8 ± 2）",
+                "locale": "ja",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24～28 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次のステップ",
+                "locale": "ja",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "アニオンギャップを計算する",
+                "locale": "ja",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "適切な呼吸性代償を伴う代謝性アシドーシス",
+            "locale": "ja",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "予測PaCO₂（Winter: 1,5 × HCO₃⁻ + 8 ± 2）",
+                "locale": "ja",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24～28 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "次のステップ",
+                "locale": "ja",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "アニオンギャップを計算する",
+                "locale": "ja",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "呼吸性アシドーシスを伴う代謝性アシドーシス",
+            "locale": "ja",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "急性なら予測HCO₃⁻（10 mmHgごとに+1）",
+                "locale": "ja",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "ja",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "慢性なら予測HCO₃⁻（10 mmHgごとに+3,5）",
+                "locale": "ja",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "ja",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "急性呼吸性アシドーシス",
+            "locale": "ja",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "予測PaCO₂（40 + 0,7 × ΔHCO₃⁻ ± 2）",
+                "locale": "ja",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "45～49 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "適切な呼吸性代償を伴う代謝性アルカローシス",
+            "locale": "ja",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "正常pHで、呼吸性アシドーシスと代謝性アルカローシス（または代償された慢性呼吸性アシドーシス）：混合性または代償性の障害",
+            "locale": "ja",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "एसिड-बेस विकार के बिना धमनीय रक्त गैस",
+            "locale": "hi",
+            "template": "documented-authored-d2783ace5960ab732482"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अपेक्षित PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "hi",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 से 28 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अगला कदम",
+                "locale": "hi",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "एनियन गैप की गणना करें",
+                "locale": "hi",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उचित श्वसन क्षतिपूर्ति के साथ मेटाबोलिक एसिडोसिस",
+            "locale": "hi",
+            "template": "documented-authored-53c9cd801c85a7a733c4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अपेक्षित PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+                "locale": "hi",
+                "template": "documented-authored-4caca7420d6bdcee8ce7"
+              },
+              "value": {
+                "text": "24 से 28 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  24,
+                  28
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अगला कदम",
+                "locale": "hi",
+                "template": "documented-authored-9a6e395268526652d5ce"
+              },
+              "value": {
+                "text": "एनियन गैप की गणना करें",
+                "locale": "hi",
+                "template": "documented-authored-dc5d65e247609a929599"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सहवर्ती श्वसन एसिडोसिस के साथ मेटाबोलिक एसिडोसिस",
+            "locale": "hi",
+            "template": "documented-authored-fc8e3e30b968f5295bf0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "यदि तीव्र हो तो अपेक्षित HCO₃⁻ (+1 प्रति 10 mmHg)",
+                "locale": "hi",
+                "template": "documented-authored-047a9c9c9dd3bf00bb0a"
+              },
+              "value": {
+                "text": "26 mEq/L",
+                "locale": "hi",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "यदि क्रॉनिक हो तो अपेक्षित HCO₃⁻ (+3,5 प्रति 10 mmHg)",
+                "locale": "hi",
+                "template": "documented-authored-c1757331ede5a6b94bc2"
+              },
+              "value": {
+                "text": "31 mEq/L",
+                "locale": "hi",
+                "template": "documented-authored-c159c3fcfad574037597",
+                "sourceNumbers": [
+                  31
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "तीव्र श्वसन एसिडोसिस",
+            "locale": "hi",
+            "template": "documented-authored-18fe14e51372f74020d7"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अपेक्षित PaCO₂ (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+                "locale": "hi",
+                "template": "documented-authored-ed301213e2789000dd54"
+              },
+              "value": {
+                "text": "45 से 49 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-62f3dc0acfa3dd2ce73d",
+                "sourceNumbers": [
+                  45,
+                  49
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उचित श्वसन क्षतिपूर्ति के साथ मेटाबोलिक अल्कलोसिस",
+            "locale": "hi",
+            "template": "documented-authored-c0daa6f466ba095c0e61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सामान्य pH के साथ श्वसन एसिडोसिस और मेटाबोलिक अल्कलोसिस (या क्षतिपूरित क्रॉनिक श्वसन एसिडोसिस): मिश्रित या क्षतिपूरित विकार",
+            "locale": "hi",
+            "template": "documented-authored-1cf1c65117efefd24873"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

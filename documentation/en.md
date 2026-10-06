@@ -83,3 +83,56 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Arterial blood gas without acid-base disorder
+
+
+### 2
+
+Metabolic acidosis with adequate respiratory compensation
+
+| Result details | |
+| --- | --- |
+| Expected PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2) | 24 to 28 mmHg |
+| Next step | calculate the anion gap |
+
+
+### 3
+
+Metabolic acidosis with associated respiratory acidosis
+
+| Result details | |
+| --- | --- |
+| Expected PaCO₂ (Winter: 1,5 × HCO₃⁻ + 8 ± 2) | 24 to 28 mmHg |
+| Next step | calculate the anion gap |
+
+
+### 4
+
+Acute respiratory acidosis
+
+| Result details | |
+| --- | --- |
+| Expected HCO₃⁻ if acute (+1 per 10 mmHg) | 26 mEq/L |
+| Expected HCO₃⁻ if chronic (+3,5 per 10 mmHg) | 31 mEq/L |
+
+
+### 5
+
+Metabolic alkalosis with adequate respiratory compensation
+
+| Result details | |
+| --- | --- |
+| Expected PaCO₂ (40 + 0,7 × ΔHCO₃⁻ ± 2) | 45 to 49 mmHg |
+
+
+### 6
+
+Normal pH with respiratory acidosis with metabolic alkalosis (or compensated chronic respiratory acidosis): mixed or compensated disorder
+

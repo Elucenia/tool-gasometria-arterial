@@ -283,7 +283,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Compensaçãoclássica/Winter 1967, esquema Berend 2014; Henderson Hasselbalch 6,1/0,03; sem método Stewart",
-    "implementationVersion": "gasometria-arterial@native-2026-10-03+73acdbaba6b8",
+    "implementationVersion": "gasometria-arterial@native-2026-10-05+0a4a4df6ebe1",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/25295502/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -497,7 +497,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+      "implementationHash": "0a4a4df6ebe1ce73fdd3b5ea3575c8d4bc4d6e2d23cc4ae0c40a9e5d4ec1223f",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "gasometria-arterial@native-2026-10-03+73acdbaba6b8",
+          "previousImplementationHash": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4",
+          "implementationHash": "0a4a4df6ebe1ce73fdd3b5ea3575c8d4bc4d6e2d23cc4ae0c40a9e5d4ec1223f",
+          "scientificBodySha256": "fb928b843a10e37f2854ec0b12e793e5f6115334cee4a7350f2fb6cbe707e354",
+          "metadataContractHash": "bf13c8a16d7c0764a88cbf0dfc885da163b338ab5de55cfe8944a13ae4f8e7cc",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A gasometria usa pH, PaCO₂ e bicarbonato para descrever padrões e compensação aproximada; pH aparentemente normal pode coexistir com distúrbio misto. Esta interface não recebe sódio, cloro ou albumina e não calcula ânion gap nem identifica toda causa metabólica. As fórmulas pressupõem contexto fisiológico e tempo para compensação. Há variantes entre fontes: a compensação crônica da acidose respiratória local usa 3,5, enquanto a tabela de Berend 2014 descreve 4–5 por 10 mmHg; a origem dessa variante local deve ser conferida antes de afirmar equivalência integral.",
     "limitsEvidence": {
@@ -529,20 +557,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/gasometria-arterial/calculator.js",
-    "bytes": 7501,
-    "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+    "bytes": 7706,
+    "sha256": "0a4a4df6ebe1ce73fdd3b5ea3575c8d4bc4d6e2d23cc4ae0c40a9e5d4ec1223f"
   },
-  "sourceToolSha256": "f27498de1096bf602f1ccf7a998dd2c07089cc9590fc1f75f1452da5dcbe0c9d",
+  "sourceToolSha256": "81d8b24794e0e44f60a09e00e97c07b603ef3ea879ff2c8d8a90680b37c53bab",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "5b5c73aef8751b4b926dffdb9192c1734f93a1e2fb79a84b966f47ee884d9cdf",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "5b5c73aef8751b4b926dffdb9192c1734f93a1e2fb79a84b966f47ee884d9cdf",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

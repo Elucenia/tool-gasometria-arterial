@@ -1,0 +1,399 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "gasometria-arterial",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "9af9acfdacc98f5a7bc6df362ccc97cbb52fcd92",
+    "oldEngineSha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4",
+    "currentEngineSha256": "0a4a4df6ebe1ce73fdd3b5ea3575c8d4bc4d6e2d23cc4ae0c40a9e5d4ec1223f"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "pH 7,40, PaCO₂ 40, HCO₃⁻ 24: normal",
+      "input": {
+        "ph": 7.4,
+        "paco2": 40,
+        "hco3": 24
+      },
+      "publicOutput": {
+        "id": "gasometria-arterial",
+        "main": [
+          "7,40",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "primary": "normal",
+          "phcalc": 7.401029995663981
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "level": "low",
+        "verdict": "sem distúrbio"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,40",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "level": "low",
+        "verdict": "Gasometria sem distúrbio ácido-base",
+        "note": "",
+        "raw": {
+          "primary": "normal",
+          "phcalc": 7.401029995663981
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "pH 7,29, PaCO₂ 26, HCO₃⁻ 12: acidose metabólica compensada (Winter 26 ± 2)",
+      "input": {
+        "ph": 7.29,
+        "paco2": 26,
+        "hco3": 12
+      },
+      "publicOutput": {
+        "id": "gasometria-arterial",
+        "main": [
+          "7,29",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "exp": 26,
+          "phcalc": 7.287086643357144,
+          "mixed": 0,
+          "primary": "acidose metabólica"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "exp": 26,
+          "mixed": 0
+        },
+        "level": "mid",
+        "verdict": "acidose metabólica com compensação respiratória adequada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,29",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "level": "mid",
+        "verdict": "Acidose metabólica com compensação respiratória adequada",
+        "rows": [
+          [
+            "PaCO₂ esperada (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+            "24 a 28 mmHg"
+          ],
+          [
+            "Próximo passo",
+            "calcule o ânion gap"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "exp": 26,
+          "phcalc": 7.287086643357144,
+          "mixed": 0,
+          "primary": "acidose metabólica"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "pH 7,15, PaCO₂ 36, HCO₃⁻ 12: acidose metabólica + respiratória",
+      "input": {
+        "ph": 7.15,
+        "paco2": 36,
+        "hco3": 12
+      },
+      "publicOutput": {
+        "id": "gasometria-arterial",
+        "main": [
+          "7,15",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "exp": 26,
+          "phcalc": 7.145757490560674,
+          "mixed": 1,
+          "primary": "acidose metabólica"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "exp": 26,
+          "mixed": 1
+        },
+        "level": "high",
+        "verdict": "com acidose respiratória associada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,15",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "level": "high",
+        "verdict": "Acidose metabólica com acidose respiratória associada",
+        "rows": [
+          [
+            "PaCO₂ esperada (Winter: 1,5 × HCO₃⁻ + 8 ± 2)",
+            "24 a 28 mmHg"
+          ],
+          [
+            "Próximo passo",
+            "calcule o ânion gap"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "exp": 26,
+          "phcalc": 7.145757490560674,
+          "mixed": 1,
+          "primary": "acidose metabólica"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "pH 7,26, PaCO₂ 60, HCO₃⁻ 26: acidose respiratória aguda",
+      "input": {
+        "ph": 7.26,
+        "paco2": 60,
+        "hco3": 26
+      },
+      "publicOutput": {
+        "id": "gasometria-arterial",
+        "main": [
+          "7,26",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "expAguda": 26,
+          "expCronica": 31,
+          "phcalc": 7.259700842867511,
+          "mixed": 0,
+          "primary": "acidose respiratória"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "expAguda": 26,
+          "expCronica": 31
+        },
+        "level": "mid",
+        "verdict": "acidose respiratória aguda"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,26",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "level": "mid",
+        "verdict": "Acidose respiratória aguda",
+        "rows": [
+          [
+            "HCO₃⁻ esperado se aguda (+1 por 10 mmHg)",
+            "26 mEq/L"
+          ],
+          [
+            "HCO₃⁻ esperado se crônica (+3,5 por 10 mmHg)",
+            "31 mEq/L"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "expAguda": 26,
+          "expCronica": 31,
+          "phcalc": 7.259700842867511,
+          "mixed": 0,
+          "primary": "acidose respiratória"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "pH 7,48, PaCO₂ 47, HCO₃⁻ 34: alcalose metabólica compensada",
+      "input": {
+        "ph": 7.48,
+        "paco2": 47,
+        "hco3": 34
+      },
+      "publicOutput": {
+        "id": "gasometria-arterial",
+        "main": [
+          "7,48",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "exp": 47,
+          "phcalc": 7.482259804386874,
+          "mixed": 0,
+          "primary": "alcalose metabólica"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "exp": 47
+        },
+        "level": "mid",
+        "verdict": "alcalose metabólica com compensação"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,48",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "level": "mid",
+        "verdict": "Alcalose metabólica com compensação respiratória adequada",
+        "rows": [
+          [
+            "PaCO₂ esperada (40 + 0,7 × ΔHCO₃⁻ ± 2)",
+            "45 a 49 mmHg"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "exp": 47,
+          "phcalc": 7.482259804386874,
+          "mixed": 0,
+          "primary": "alcalose metabólica"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 5,
+      "name": "pH 7,40, PaCO₂ 60, HCO₃⁻ 36: pH normal, distúrbio misto",
+      "input": {
+        "ph": 7.4,
+        "paco2": 60,
+        "hco3": 36
+      },
+      "publicOutput": {
+        "id": "gasometria-arterial",
+        "main": [
+          "7,40",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "raw": {
+          "primary": "misto ou compensado",
+          "phcalc": 7.401029995663981
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "level": "mid",
+        "verdict": "pH normal"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,40",
+          "pH"
+        ],
+        "label": "Distúrbio ácido-base",
+        "level": "mid",
+        "verdict": "pH normal com acidose respiratória com alcalose metabólica (ou acidose respiratória crônica compensada): distúrbio misto ou compensado",
+        "note": "",
+        "raw": {
+          "primary": "misto ou compensado",
+          "phcalc": 7.401029995663981
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    }
+  ]
+}

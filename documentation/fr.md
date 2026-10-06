@@ -83,3 +83,56 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Gaz du sang artériel sans trouble acido-basique
+
+
+### 2
+
+Acidose métabolique avec compensation respiratoire adéquate
+
+| Détails du résultat | |
+| --- | --- |
+| PaCO₂ attendue (Winter : 1,5 × HCO₃⁻ + 8 ± 2) | 24 à 28 mmHg |
+| Étape suivante | calculez le trou anionique |
+
+
+### 3
+
+Acidose métabolique avec acidose respiratoire associée
+
+| Détails du résultat | |
+| --- | --- |
+| PaCO₂ attendue (Winter : 1,5 × HCO₃⁻ + 8 ± 2) | 24 à 28 mmHg |
+| Étape suivante | calculez le trou anionique |
+
+
+### 4
+
+Acidose respiratoire aiguë
+
+| Détails du résultat | |
+| --- | --- |
+| HCO₃⁻ attendu si aiguë (+1 par 10 mmHg) | 26 mEq/L |
+| HCO₃⁻ attendu si chronique (+3,5 par 10 mmHg) | 31 mEq/L |
+
+
+### 5
+
+Alcalose métabolique avec compensation respiratoire adéquate
+
+| Détails du résultat | |
+| --- | --- |
+| PaCO₂ attendue (40 + 0,7 × ΔHCO₃⁻ ± 2) | 45 à 49 mmHg |
+
+
+### 6
+
+pH normal avec acidose respiratoire avec alcalose métabolique (ou acidose respiratoire chronique compensée) : trouble mixte ou compensé
+

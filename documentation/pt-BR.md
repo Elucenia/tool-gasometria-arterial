@@ -83,3 +83,56 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Gasometria sem distúrbio ácido-base
+
+
+### 2
+
+Acidose metabólica com compensação respiratória adequada
+
+| Detalhes do resultado | |
+| --- | --- |
+| PaCO₂ esperada (Winter: 1,5 × HCO₃⁻ + 8 ± 2) | 24 a 28 mmHg |
+| Próximo passo | calcule o ânion gap |
+
+
+### 3
+
+Acidose metabólica com acidose respiratória associada
+
+| Detalhes do resultado | |
+| --- | --- |
+| PaCO₂ esperada (Winter: 1,5 × HCO₃⁻ + 8 ± 2) | 24 a 28 mmHg |
+| Próximo passo | calcule o ânion gap |
+
+
+### 4
+
+Acidose respiratória aguda
+
+| Detalhes do resultado | |
+| --- | --- |
+| HCO₃⁻ esperado se aguda (+1 por 10 mmHg) | 26 mEq/L |
+| HCO₃⁻ esperado se crônica (+3,5 por 10 mmHg) | 31 mEq/L |
+
+
+### 5
+
+Alcalose metabólica com compensação respiratória adequada
+
+| Detalhes do resultado | |
+| --- | --- |
+| PaCO₂ esperada (40 + 0,7 × ΔHCO₃⁻ ± 2) | 45 a 49 mmHg |
+
+
+### 6
+
+pH normal com acidose respiratória com alcalose metabólica (ou acidose respiratória crônica compensada): distúrbio misto ou compensado
+

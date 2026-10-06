@@ -83,3 +83,56 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Emogasanalisi arteriosa senza disturbo acido-base
+
+
+### 2
+
+Acidosi metabolica con compensazione respiratoria adeguata
+
+| Dettagli del risultato | |
+| --- | --- |
+| PaCO₂ attesa (Winter: 1,5 × HCO₃⁻ + 8 ± 2) | 24 a 28 mmHg |
+| Passo successivo | calcoli il gap anionico |
+
+
+### 3
+
+Acidosi metabolica con acidosi respiratoria associata
+
+| Dettagli del risultato | |
+| --- | --- |
+| PaCO₂ attesa (Winter: 1,5 × HCO₃⁻ + 8 ± 2) | 24 a 28 mmHg |
+| Passo successivo | calcoli il gap anionico |
+
+
+### 4
+
+Acidosi respiratoria acuta
+
+| Dettagli del risultato | |
+| --- | --- |
+| HCO₃⁻ atteso se acuta (+1 per 10 mmHg) | 26 mEq/L |
+| HCO₃⁻ atteso se cronica (+3,5 per 10 mmHg) | 31 mEq/L |
+
+
+### 5
+
+Alcalosi metabolica con compensazione respiratoria adeguata
+
+| Dettagli del risultato | |
+| --- | --- |
+| PaCO₂ attesa (40 + 0,7 × ΔHCO₃⁻ ± 2) | 45 a 49 mmHg |
+
+
+### 6
+
+pH normale con acidosi respiratoria con alcalosi metabolica (o acidosi respiratoria cronica compensata): disturbo misto o compensato
+

@@ -1,6 +1,6 @@
 {
   "id": "gasometria-arterial",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 7501,
-      "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+      "bytes": 7706,
+      "sha256": "0a4a4df6ebe1ce73fdd3b5ea3575c8d4bc4d6e2d23cc4ae0c40a9e5d4ec1223f"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1103,
-      "sha256": "da742def434a9d234596b277594d43d6b759e6b1c28da5523cb5f27e32df5819"
+      "bytes": 1372,
+      "sha256": "041f15f6b4df8b434e31f183e5db6f319757de0cab9257d8ce298baca400c7ed"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4859,
-      "sha256": "6c25538cc67ebef25fe5b6ab36123ceab0bd88ef18be089542bd7c85a64a56e1"
+      "bytes": 6356,
+      "sha256": "5c145d18219434585f6d3a805cf7ce766e5a94ee5f88f4bdf0b8808fbb93ef87"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 4250,
-      "sha256": "47361f1b638f53dde6b8106ac7fd4646d359a9c098122cecd2dd2cb743752d2c"
+      "bytes": 5558,
+      "sha256": "057732f40a81bfb7c931bee8642ed2fcaa6736f0b6dc25adfabdf87f6a377cef"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3722,
-      "sha256": "85d4ebf391e953935d200262b3dd6e2cc76a4fcbe0de664918d58e4541bf1446"
+      "bytes": 4877,
+      "sha256": "60c1bca04af504b26b286f4c2dfb42d80a1bc7825e9bf38725f16e659daa8a86"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 4031,
-      "sha256": "d547fae309874c47a870cfc230406576152928e69b32d7d54a3b447dc6bd87da"
+      "bytes": 5242,
+      "sha256": "f9628dc88e19aab1541df703505f3c56569bdc96f06cdb80bb1576bc0c68bcd2"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 4228,
-      "sha256": "f6b14ad9a0eac6e7e9f15927844efec1271e879324f0c8b86542274f97ef3167"
+      "bytes": 5482,
+      "sha256": "09308232c1ab0cf4cfd5cffe315c9167bcb6e9a3d67a67a3289349473a821ad5"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6804,
-      "sha256": "66c6934c5259ea236914c99ce25d289767ff2c25c0b5bd723c166bb8b53e9246"
+      "bytes": 9055,
+      "sha256": "63a381c4f649f2b6803100cf0ee5630859b0e1614c9eadefdb878acd4c37f74f"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3971,
-      "sha256": "4eb1b1e5821c486550bd8c54ac7c59f73ae94706cce54d7a55b2722c8bcbac30"
+      "bytes": 5166,
+      "sha256": "088b4322ac0d3b59ab7c1d3bdf117d36204ad5729b761a1f5b482322aae56943"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 4291,
-      "sha256": "c9933c89b2d9cf3a5e2053cac8f38c7ac353cb05a34de690d2a20bfc38c61866"
+      "bytes": 5591,
+      "sha256": "f0966cd490fa0f62074422c005755aa930809e6b94a9ba5196188adc8189ff4f"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3828,
-      "sha256": "f608eef931dfad2754f5c7a1062deb707e3ef37b4cef1bb94e9fa4e213b053f3"
+      "bytes": 5022,
+      "sha256": "d6f65e4560a1f94a7416788cc926452af2890134d52b0f71ad2347ccb00fd180"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3264,
-      "sha256": "bf05fdf7137193c62d9d8ad69857321852e701d4cc488e9658286a0e3601efb5"
+      "bytes": 4321,
+      "sha256": "371a7583f9c93556a8ee190b294507c583730f890fca8ed45ffaf80ab1c06cad"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 61807,
+      "sha256": "e248d515e69ebf500cc8b61aa61b2a056dccd8b9e69c6081fb2c6cea5aea9184"
     },
     {
       "path": "engine/tool-code/gasometria-arterial/calculator.js",
-      "bytes": 7501,
-      "sha256": "73acdbaba6b83f65ca2fddd44d783e4ce1754bc702e5dc0c084e2b698be0f5a4"
+      "bytes": 7706,
+      "sha256": "0a4a4df6ebe1ce73fdd3b5ea3575c8d4bc4d6e2d23cc4ae0c40a9e5d4ec1223f"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2815,
       "sha256": "ea5e157aad3499aed9dd14ba3d8103e37d20595529262c7b409f0f013bdaf90c"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12134,
+      "sha256": "9c76e6f2a325d5b932eb594e676ba40b878de30acf7c592be0cc7c18412f5baf"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 50626,
-      "sha256": "9254d4eafac6e0666557d5e4b0f0cce22582562efa708305b1ceaeea671e9031"
+      "bytes": 94651,
+      "sha256": "c9da0cf5b78a08c26bce64fba8e85fa0477c158a5a75cac5139c1f309b7e071b"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 381,
-      "sha256": "936f8176ae71b25d66ee61d7ba8dfdce7e34e4f2b8a497ff6f11fbd59826da77"
+      "bytes": 475,
+      "sha256": "571d8b971014ffde18a13453c6b56d68643a34707ebaff2a52f45e250529ffb2"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12134,
-      "sha256": "9c76e6f2a325d5b932eb594e676ba40b878de30acf7c592be0cc7c18412f5baf"
+      "bytes": 6400,
+      "sha256": "7b68a46c8e513108ecf1a6f7671a666156af42098619ed59c33a2e506b4f33cf"
     },
     {
       "path": "README.md",
-      "bytes": 3178,
-      "sha256": "9c117701b0557cb3447e6f8dfd1565927fc671dad3333e668bf9ce7fd8a395eb"
+      "bytes": 3763,
+      "sha256": "b18fdec2428c1769f1aab8bdf42cef610a5622182225b448aa375ae12ffc1811"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 10789,
+      "sha256": "822da771a388f50c42a19c0081d2a600206467c904d007cad4ef6c225e18e753"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1844,
       "sha256": "d31b72a70fe110c40a685c49ce558d47c11aa5f1e5526302f11021b7272db8d7"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 28681,
-      "sha256": "37e7e6c8fc08cf48aa0477a01021130547e269d66771ec7af6b388d5a4ff0da1"
+      "bytes": 30181,
+      "sha256": "8ee32df7c5a3dafbac66e95dd92f83f4a1a6ed0f6887f1586f369a3839703eac"
     }
   ]
 }
